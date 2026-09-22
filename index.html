@@ -1,45 +1,137 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-KE">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./src/responsive.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Campaign Economy Training Kenya | Four Clover Africa Initiative
+    </title>
+
+    <meta
+      name="description"
+      content="Free entrepreneurship, financial literacy and campaign economy training for Kenyan youth, women and MSMEs ahead of 2027. Register now for mentorship, networking and business development support."
+    />
+
+    <meta
+      name="keywords"
+      content="Four Clover Africa Initiative, Kenya campaign economy, entrepreneurship training Kenya, youth empowerment Kenya, women empowerment Kenya, financial literacy Kenya, MSME training Kenya, 2027 election jobs Kenya, IEBC training opportunities"
+    />
+
+    <meta name="author" content="Four Clover Africa Initiative" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#784cfb" />
+
+    <link rel="canonical" href="https://www.cloverafrica.org/" />
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/responsive.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <title>Four Clover Africa Initiative</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Four Clover Africa Initiative | Campaign Economy Training Kenya"
+    />
+
+    <meta
+      property="og:description"
+      content="Preparing Kenyans to monetize the 2027 campaign economy through entrepreneurship, mentorship and financial literacy training."
+    />
+
+    <meta property="og:url" content="https://www.cloverafrica.org/" />
+
+    <meta
+      property="og:image"
+      content="https://www.cloverafrica.org/images/fourclover.jpeg"
+    />
+
+    <meta property="og:locale" content="en_KE" />
+
+    <meta property="og:site_name" content="Four Clover Africa Initiative" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Four Clover Africa Initiative" />
+
+    <meta
+      name="twitter:description"
+      content="Empowering youth, women and entrepreneurs through campaign economy opportunities in Kenya."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.cloverafrica.org/images/fourclover.jpeg"
+    />
+
+    <!-- Organisation Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Four Clover Africa Initiative",
+        "url": "https://www.cloverafrica.org",
+        "logo": "https://www.cloverafrica.org/images/logom.jpeg",
+        "description": "Economic empowerment programme for youth, women and entrepreneurs in Kenya, offering campaign economy training, mentorship, financial literacy and business development ahead of the 2027 elections.",
+        "email": "info@cloverafrica.org",
+        "telephone": "+254-XXX-XXXXXX",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "sameAs": []
+      }
+    </script>
   </head>
+
   <body class="bg-neutral-50">
     <!-- Header -->
     <header id="header" class="bg-neutral-50 w-full overflow-hidden relative">
       <div class="w-full bg-violet-500 h-4"></div>
+
+      <!-- Navigation -->
       <nav
         class="w-full bg-white z-50 flex justify-between items-center h-16 px-4"
+        aria-label="Main navigation"
       >
-        <!-- Logo + Title -->
+        <!-- Logo -->
         <div class="flex items-center gap-3">
           <img
             src="./src/images/logom.jpeg"
-            alt="Four Clover Logo"
-            class="w-12 h-12 rounded"
+            alt="Four Clover Africa Initiative logo"
+            class="h-10 w-10 object-contain"
           />
+
           <div>
-            <h2
+            <p
               class="font-serif text-base uppercase text-neutral-950 font-bold"
             >
-              Four Clover <span class="title text-base">Africa</span>
-            </h2>
+              Four Clover
+              <span class="title text-base">Africa</span>
+            </p>
+
             <p class="text-blue-800 uppercase font-bold text-sm">Initiative</p>
           </div>
         </div>
 
-        <!-- Hamburger Button (Mobile only) -->
+        <!-- Mobile Menu Button -->
         <button
           id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="menu"
           class="block md:hidden text-violet-500 text-2xl focus:outline-none"
         >
           <i class="fas fa-bars"></i>
@@ -50,60 +142,89 @@
           id="menu"
           class="hidden md:flex md:flex-row md:gap-2 text-sm md:text-base absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none"
         >
-          <li><a href="#header" class="block px-2 py-1">Home</a></li>
-          <li><a href="#about" class="block px-2 py-1">About Us</a></li>
-          <li><a href="#training" class="block px-2 py-1">Training</a></li>
-          <li><a href="#programme" class="block px-2 py-1">Programme</a></li>
-          <li><a href="#partners" class="block px-2 py-1">Partners</a></li>
-          <li><a href="#contact" class="block px-2 py-1">Contact</a></li>
+          <li>
+            <a href="#header">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+
+          <li>
+            <a href="#training">Training</a>
+          </li>
+
+          <li>
+            <a href="#programme">Programme</a>
+          </li>
+
+          <li>
+            <a href="#partners">Partners</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
           <li>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfKM-Ko1XPaFoLDpq1Ff-HtaT5VgDt_rKYpZmE9FprIo5PctA/viewform?usp=sharing&ouid=101369760689465540792"
-              class="block px-2 py-1"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfKM-Ko1XPaFoLDpq1Ff-HtaT5VgDt_rKYpZmE9FprIo5PctA/viewform?usp=sharing"
+              rel="noopener"
+              target="_blank"
+              >Register</a
             >
-              Register
-            </a>
           </li>
         </ul>
       </nav>
 
-      <!-- Hero Section -->
+      <!-- Hero -->
       <div class="grid md:grid-cols-2 gap-6 items-center px-6 py-10">
         <!-- Left Content -->
         <div>
           <h1
             class="text-4xl md:text-5xl font-serif text-neutral-700 uppercase leading-tight mb-4"
           >
-            Four Clover Initiative
+            Four Clover Africa Initiative: Preparing Kenyans for the 2027
+            Campaign Economy
           </h1>
-          <h3 class="text-2xl font-bold mb-4">
-            Preparing Kenyans to Monetize the 2027 Campaign Economy.
-          </h3>
+
+          <h2 class="text-2xl font-bold mb-4">
+            Empowering Youth, Women, Entrepreneurs and MSMEs Through Skills,
+            Opportunity and Strategic Growth.
+          </h2>
+
           <p class="text-base mb-6">
             The Four Clover Africa Initiative empowers youth, entrepreneurs,
-            women, MSMEs and communities through knowledge and opportunity.
+            women, MSMEs and communities through practical training, mentorship,
+            business development, networking and financial literacy programmes
+            designed to create sustainable economic opportunities.
           </p>
+
           <div class="flex gap-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfKM-Ko1XPaFoLDpq1Ff-HtaT5VgDt_rKYpZmE9FprIo5PctA/viewform?usp=sharing&ouid=101369760689465540792"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfKM-Ko1XPaFoLDpq1Ff-HtaT5VgDt_rKYpZmE9FprIo5PctA/viewform?usp=sharing"
+              rel="noopener"
+              target="_blank"
               class="button-link bg-violet-500 text-white"
+              >Register</a
             >
-              Register
-            </a>
+
             <a
               href="#about"
               class="button-link text-violet-500 border border-violet-500"
+              >Learn More</a
             >
-              Learn More
-            </a>
           </div>
         </div>
 
-        <!-- Right Image -->
+        <!-- Hero Image -->
         <img
           src="./src/images/fourclover.jpeg"
-          alt="Four Clover Initiative"
+          alt="Youth and entrepreneurs at a Four Clover Africa Initiative training session in Kenya"
           class="rounded w-full h-auto"
+          width="600"
+          height="400"
+          loading="eager"
         />
       </div>
     </header>
@@ -142,23 +263,24 @@
           </p>
           <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
             <div class="bg-neutral-50 rounded p-4">
-              <h1 class="font-bold text-blue-800 mb-2">Learn</h1>
+              <h3 class="font-bold text-blue-800 mb-2">Learn</h3>
               <p>Acquire practical business and campaign economy skills.</p>
             </div>
             <div class="bg-neutral-50 rounded p-4">
-              <h1 class="font-bold text-blue-800 mb-2">Be Ready</h1>
+              <h3 class="font-bold text-blue-800 mb-2">Be Ready</h3>
               <p>Prepare to access opportunities confidently.</p>
             </div>
             <div class="bg-neutral-50 rounded p-4">
-              <h1 class="font-bold text-blue-800 mb-2">Be Strategic</h1>
+              <h3 class="font-bold text-blue-800 mb-2">Be Strategic</h3>
               <p>Build long-term businesses and partnerships.</p>
             </div>
           </div>
         </div>
         <img
           src="./src/images/fourclover.jpeg"
-          alt="Four Clover Training"
+          alt="Four Clover Africa Initiative training participants in Kenya"
           class="rounded w-full h-auto"
+          loading="lazy"
         />
       </div>
     </section>
@@ -257,7 +379,7 @@
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-bullseye"></i>
+          <i class="fas fa-bullseye" aria-hidden="true"></i>
           <h3>Campaign Economy</h3>
           <p>
             Understanding economic opportunities created before, during and
@@ -265,7 +387,7 @@
           </p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-briefcase"></i>
+          <i class="fas fa-briefcase" aria-hidden="true"></i>
           <h3>Business Development</h3>
           <p>
             Learn how to position your business to secure contracts and
@@ -273,7 +395,7 @@
           </p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-bullhorn"></i>
+          <i class="fas fa-bullhorn" aria-hidden="true"></i>
           <h3>Employment Opportunities</h3>
           <p>
             Prepare for permanent and temporary employment opportunities with
@@ -282,7 +404,7 @@
           </p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-bullhorn"></i>
+          <i class="fas fa-bullhorn" aria-hidden="true"></i>
           <h3>Political Branding</h3>
           <p>
             Branding, marketing and communication strategies for
@@ -290,19 +412,19 @@
           </p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-coins"></i>
+          <i class="fas fa-coins" aria-hidden="true"></i>
           <h3>Financial Literacy</h3>
           <p>Budgeting, pricing, costing and managing finances effectively.</p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-handshake"></i>
+          <i class="fas fa-handshake" aria-hidden="true"></i>
           <h3>Networking</h3>
           <p>
             Build partnerships and relationships that unlock new opportunities.
           </p>
         </div>
         <div class="training-card p-6 bg-white rounded shadow">
-          <i class="fas fa-lightbulb"></i>
+          <i class="fas fa-lightbulb" aria-hidden="true"></i>
           <h3>Innovation</h3>
           <p>
             Develop creative solutions and sustainable business ideas for future
@@ -334,6 +456,7 @@
             src="./src/images/allafrica1.png"
             alt="AllAfrica Foundation logo"
             class="mx-auto w-32 h-32 object-contain"
+            loading="lazy"
           />
           <p>Community development & youth empowerment.</p>
         </a>
@@ -345,6 +468,7 @@
             src="./src/images/hgfoundation1.png"
             alt="Hugh Grant Foundation logo"
             class="mx-auto w-32 h-32 object-contain"
+            loading="lazy"
           />
           <p>Supporting entrepreneurship & innovation.</p>
         </a>
@@ -356,6 +480,7 @@
             src="./src/images/kncci1.png"
             alt="KNCCI logo"
             class="mx-auto w-32 h-32 object-contain"
+            loading="lazy"
           />
           <p>Business growth & market access.</p>
         </a>
@@ -367,9 +492,45 @@
             src="./src/images/purpleclover1.png"
             alt="Purple Clover logo"
             class="mx-auto w-32 h-32 object-contain"
+            loading="lazy"
           />
           <p>Official training & consultancy partner.</p>
         </a>
+      </div>
+    </section>
+
+    <section id="faq" class="w-full bg-white px-6 py-16">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-violet-500 uppercase font-bold text-sm"> FAQ </span>
+
+          <h2 class="text-4xl font-bold mt-3">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">Who can participate?</h3>
+            <p>
+              Youth, women, entrepreneurs, MSMEs and communities across Kenya.
+            </p>
+          </div>
+
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">Is participation free?</h3>
+            <p>
+              Participants should refer to current programme registration
+              details.
+            </p>
+          </div>
+
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">What will I learn?</h3>
+            <p>
+              Campaign economy opportunities, financial literacy,
+              entrepreneurship, networking and business development.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -388,22 +549,34 @@
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <div class="contact-item p-6 bg-white rounded shadow text-center">
-          <i class="fas fa-location-dot text-violet-500 text-2xl mb-2"></i>
+          <i
+            class="fas fa-location-dot text-violet-500 text-2xl mb-2"
+            aria-hidden="true"
+          ></i>
           <h3 class="font-bold">Office Address</h3>
           <p>Nairobi, Kenya</p>
         </div>
         <div class="contact-item p-6 bg-white rounded shadow text-center">
-          <i class="fas fa-phone text-violet-500 text-2xl mb-2"></i>
+          <i
+            class="fas fa-phone text-violet-500 text-2xl mb-2"
+            aria-hidden="true"
+          ></i>
           <h3 class="font-bold">Call Us</h3>
           <p>+254 XXX XXX XXX</p>
         </div>
         <div class="contact-item p-6 bg-white rounded shadow text-center">
-          <i class="fas fa-envelope text-violet-500 text-2xl mb-2"></i>
+          <i
+            class="fas fa-envelope text-violet-500 text-2xl mb-2"
+            aria-hidden="true"
+          ></i>
           <h3 class="font-bold">Email</h3>
           <p>info@cloverafrica.org</p>
         </div>
         <div class="contact-item p-6 bg-white rounded shadow text-center">
-          <i class="fas fa-clock text-violet-500 text-2xl mb-2"></i>
+          <i
+            class="fas fa-clock text-violet-500 text-2xl mb-2"
+            aria-hidden="true"
+          ></i>
           <h3 class="font-bold">Working Hours</h3>
           <p>Mon - Fri<br />8:00 AM - 5:00 PM</p>
         </div>
@@ -412,6 +585,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb="
           loading="lazy"
+          title="Four Clover Africa Initiative office location in Nairobi, Kenya"
           class="w-full h-96 border-0"
         ></iframe>
       </div>
@@ -419,9 +593,41 @@
 
     <!-- Footer -->
     <footer class="bg-violet-500 text-white text-center py-4 mt-10">
-      <p>&copy;2026 Clover Africa Initiative</p>
+      <p>&copy;2026 Four Clover Africa Initiative</p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who can participate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Youth, women, entrepreneurs, MSMEs and communities across Kenya."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is participation free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Participants should refer to current programme registration details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What will I learn?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Campaign economy opportunities, networking, entrepreneurship, business development and financial literacy."
+            }
+          }
+        ]
+      }
+    </script>
   </body>
 </html>
