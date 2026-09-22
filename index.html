@@ -2,16 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./src/responsive.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Four Clover Africa Initiative | Campaign Economy Training Kenya
+    </title>
+
+    <meta
+      name="description"
+      content="Four Clover Africa Initiative empowers youth, women, entrepreneurs and MSMEs in Kenya through campaign economy training, business development, mentorship, networking and financial literacy."
+    />
+
+    <meta
+      name="keywords"
+      content="Four Clover Africa Initiative, Kenya campaign economy, entrepreneurship training Kenya, youth empowerment Kenya, women empowerment Kenya, financial literacy Kenya, MSME training Kenya"
+    />
+
+    <meta name="author" content="Four Clover Africa Initiative" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Four Clover Africa Initiative" />
+    <meta
+      property="og:description"
+      content="Preparing Kenyans to Monetize the 2027 Campaign Economy."
+    />
+    <meta property="og:url" content="https://www.cloverafrica.org/" />
+    <meta
+      property="og:image"
+      content="https://www.cloverafrica.org/images/fourclover.jpeg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Four Clover Africa Initiative" />
+
+    <meta
+      name="twitter:description"
+      content="Empowering youth and entrepreneurs through campaign economy opportunities."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.cloverafrica.org/images/fourclover.jpeg"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/responsive.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <title>Four Clover Africa Initiative</title>
+    <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Four Clover Africa Initiative",
+        "url": "https://www.cloverafrica.org",
+        "logo": "https://www.cloverafrica.org/images/logom.jpeg",
+        "description": "Economic empowerment programme for youth, women and entrepreneurs in Kenya."
+      }
+    </script>
   </head>
   <body class="bg-neutral-50">
     <!-- Header -->
@@ -71,14 +128,15 @@
       <div class="grid md:grid-cols-2 gap-6 items-center px-6 py-10">
         <!-- Left Content -->
         <div>
+          <h3 class="text-2xl font-bold mb-4">
+            Preparing Kenyans to Monetize the 2027 Campaign Economy.
+          </h3>
           <h1
             class="text-4xl md:text-5xl font-serif text-neutral-700 uppercase leading-tight mb-4"
           >
             Four Clover Initiative
           </h1>
-          <h3 class="text-2xl font-bold mb-4">
-            Preparing Kenyans to Monetize the 2027 Campaign Economy.
-          </h3>
+
           <p class="text-base mb-6">
             The Four Clover Africa Initiative empowers youth, entrepreneurs,
             women, MSMEs and communities through knowledge and opportunity.
@@ -373,6 +431,41 @@
       </div>
     </section>
 
+    <section id="faq" class="w-full bg-white px-6 py-16">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-violet-500 uppercase font-bold text-sm"> FAQ </span>
+
+          <h2 class="text-4xl font-bold mt-3">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">Who can participate?</h3>
+            <p>
+              Youth, women, entrepreneurs, MSMEs and communities across Kenya.
+            </p>
+          </div>
+
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">Is participation free?</h3>
+            <p>
+              Participants should refer to current programme registration
+              details.
+            </p>
+          </div>
+
+          <div class="bg-neutral-50 p-6 rounded-xl shadow">
+            <h3 class="font-bold text-lg">What will I learn?</h3>
+            <p>
+              Campaign economy opportunities, financial literacy,
+              entrepreneurship, networking and business development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="w-full bg-neutral-50 px-6 py-10">
       <div class="text-center mb-6">
@@ -419,9 +512,33 @@
 
     <!-- Footer -->
     <footer class="bg-violet-500 text-white text-center py-4 mt-10">
-      <p>&copy;2026 Clover Africa Initiative</p>
+      <p>&copy;2026 Four Clover Africa Initiative</p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who can participate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Youth, women, entrepreneurs, MSMEs and communities across Kenya."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What will I learn?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Campaign economy opportunities, networking, entrepreneurship, business development and financial literacy."
+            }
+          }
+        ]
+      }
+    </script>
   </body>
 </html>

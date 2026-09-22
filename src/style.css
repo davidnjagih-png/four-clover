@@ -288,3 +288,41 @@ footer {
   text-align: center;
   margin-top: 40px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-h);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partner-card,
+.training-card,
+.contact-item,
+.timeline-content {
+  will-change: transform;
+}
+
+.partner-card:hover,
+.training-card:hover,
+.contact-item:hover {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
